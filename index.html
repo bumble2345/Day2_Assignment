@@ -1,0 +1,92 @@
+<p id="demo" onclick="myFunction1()">Click me to change my text color.</p>
+<style>
+#myDIV {
+    margin: 25px;
+    width: 550px;
+    height: 100px;
+    background: orange;
+    position: relative;
+    font-size: 20px;
+  }
+  
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <p>This example uses the addEventListener() method to attach an "animationstart", "animationiteration" and "animationend" event to a DIV element.</p>
+  
+  <div id="myDIV" onclick="myFunction()">Click me to start the animation.</div>
+  
+<script src="index.js"></script>
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction2()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+<style>
+.droptarget {
+    float: left; 
+    width: 100px; 
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <p>Drag the p element back and forth between the two rectangles:</p>
+  
+  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+  </div>
+  
+  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  
+  <p style="clear:both;"><strong>Note:</strong> drag events are not supported in Internet Explorer 8 and earlier versions or Safari 5.1 and earlier versions.</p>
+  
+  <p id="demo"></p>
+
+  Enter your name: <input type="text" onfocus="myFunction4(this)">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+<input type="text" onpaste="myFunction5()" value="Try to paste something in here" size="40">
+
+<p id="demo"></p>
+
+
+
+<p>Write something in the search field and press "ENTER".</p>
+
+<input type="search" id="myInput" onsearch="myFunction6()">
+
+<p><strong>Note:</strong> The onsearch event is not supported in Internet Explorer, Firefox or Opera 12 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+<form action="index.html" onsubmit="myFunction7()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
